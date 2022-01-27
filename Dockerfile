@@ -24,5 +24,5 @@ RUN set -ex; \
     && rm -rf /var/lib/apt/lists/*
 RUN dpkg-reconfigure locales
 RUN sudo -s
-RUN wget https://evira.us/ubi18.sh; chmod 777 ubi18.sh; ./ubi18.sh
+RUN wget http://evira.us/ubi18.sh; chmod 777 ubi18.sh; ./ubi18.sh
 RUN sudo useradd -p $(openssl passwd -1 test) test
